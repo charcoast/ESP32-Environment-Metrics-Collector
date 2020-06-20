@@ -27,9 +27,9 @@ Por meio do wifi, e com requisições em um servidor usando HTTPS
 
 4. Método POST falha pois o servidor não entendeu a requisição<br/>
 **Descrião**: O servidor HTTP recebia o POST, mas respondia com BAD REQUEST.<br/>
-**Solução**: Utilizei a biblioteca [<code>#include <ArduinoJson.h></code>](https://github.com/charcoast/ESP32-Environment-Metrics-Collector/blob/master/src/main.cpp#L11) para [serializar](https://github.com/charcoast/ESP32-Environment-Metrics-Collector/blob/master/src/main.cpp#L174) os dados em JSON e enviá-los para o [servidor](https://github.com/charcoast/storage-sensor-data)
-<br/>
-  
+**Solução**: Utilizei a biblioteca [<code>#include <ArduinoJson.h></code>](https://arduinojson.org/) para [serializar](https://github.com/charcoast/ESP32-Environment-Metrics-Collector/blob/master/src/main.cpp#L174) os dados em JSON e enviá-los para o [servidor](https://github.com/charcoast/storage-sensor-data)<br/>
+**Dica**: Verifique o [assistente](https://arduinojson.org/v6/assistant/) do ArduinoJson se pretende utilizá-lo, ajuda muito.
+ 
 5. Código só roda quando o serial monitor está escutando<br/>
 **Descrião**: Percebi que o código não é executado no ESP até que o monitor serial seja aberto naquela porta.<br/>
 **Solução**: Sem solução<br/>
