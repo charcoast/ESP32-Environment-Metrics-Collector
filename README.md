@@ -12,12 +12,12 @@ Por meio do wifi, e com requisições em um servidor usando HTTPS
 * Problemas encontrados
 1. Arduino IDE e outras plataformas, como o PlatformIO não conseguem escrever o código no ESP<br/>
 **Descrição**: Ao tentar escrever o código apresenta mensagem de erro.<br/>
-**Solução/Paleativa**: Soldar um capacitor de 10uF em uns [pinos](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/02/fix-timed-out-waiting-for-packet-header-capacitor_f.jpg?w=750&ssl=1) (solução meio porca no meu ver) ou pressionar e segurar o botão de boot enquanto a ferramenta de upload está tentando se conectar na porta de comunicação serial.<br/>
+**Solução/Paliativa**: Soldar um capacitor de 10uF em uns [pinos](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/02/fix-timed-out-waiting-for-packet-header-capacitor_f.jpg?w=750&ssl=1) (solução meio porca no meu ver) ou pressionar e segurar o botão de boot enquanto a ferramenta de upload está tentando se conectar na porta de comunicação serial.<br/>
 **Infelizmente**: Parece uma questão de hardware que não será resolvida.
 
 2. Não conecta no Wifi<br/>
 **Descrição**: Carregado o código para dentro do ESP32, mesmo com as credenciais corretas, ocorre erro de conexão à rede wireless.<br/>
-**Paleativas**: Reiniciar o ESP após o upload do código pressionando o botão EN, ou chamar a função <code>WiFi.disconnect();</code> já no setup (nem sempre funciona).<br/>
+**Paliativas**: Reiniciar o ESP após o upload do código pressionando o botão EN, ou chamar a função <code>WiFi.disconnect();</code> já no setup (nem sempre funciona).<br/>
 **Infelizmente**: Não encontrei solução até o momento.
 
 3. Leitura dos pinos GPIO ADC2_X não liam os dados do sensor<br/>
