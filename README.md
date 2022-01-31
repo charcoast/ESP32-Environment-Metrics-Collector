@@ -33,4 +33,4 @@ Por meio do wifi, e com requisições em um servidor usando HTTPS
 5. Código só roda quando o serial monitor está escutando<br/>
 **Descrião**: Percebi que o código não é executado no ESP até que o monitor serial seja aberto naquela porta.<br/>
 **Solução**: Sem solução<br/>
-**Infelizmente**: Parece um problema no circuito de reinício do ESP32. A [issue](https://github.com/espressif/esp-idf/issues/59) que tratava desse problema foi encerrada, mas dei uma [cutucada](https://github.com/espressif/esp-idf/issues/59#issuecomment-646764326) para ver se eles acordam.
+**Infelizmente**: Parece um problema no circuito de reinício do ESP32. A [issue](https://github.com/espressif/esp-idf/issues/59) que tratava desse problema foi encerrada, mas fiz um [comentário](https://github.com/espressif/esp-idf/issues/59#issuecomment-646764326).
